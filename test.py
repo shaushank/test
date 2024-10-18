@@ -8,7 +8,7 @@ def add_num(array):
         if num < 0:
             neg_array.append(num)
     if neg_array:
-        return f'negative numbers not allowed {", ".join(map(str, neg_array))}'
+        raise Exception(f'negative numbers not allowed {", ".join(map(str, neg_array))}')
     else:
         x = sum(array)
         return f'Sum is {x}'
